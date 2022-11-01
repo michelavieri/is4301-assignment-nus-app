@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Login from '../components/Login';
 
 function academicsPage() {
     const AcademicsPageComponent = styled.div`
@@ -7,13 +8,14 @@ function academicsPage() {
         flex-direction: column;
         align-items: center;
         padding: 150px 60px 60px 60px;
+        maxWidth: 80rem;
 
         h1 {
             color: #4A4E69;
         }
     `
     const ModuleTable = styled.table`
-        width: 80%;
+        width: 50%;
         border-collapse: collapse;
 
         th {
@@ -73,6 +75,9 @@ function academicsPage() {
                     </td>
                 </tr>
             </ModuleTable>
+            <div style={{ marginTop: '60px' }}>
+                <Login />
+            </div>
         </AcademicsPageComponent>
     );
 }

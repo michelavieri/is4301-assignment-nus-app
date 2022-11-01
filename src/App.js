@@ -3,7 +3,11 @@ import HomePage from './pages/homePage';
 
 function App() {
   return (
-    <div>
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center'
+    }}>
       <HomePage />
     </div>
   );

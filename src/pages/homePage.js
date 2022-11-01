@@ -5,6 +5,7 @@ import Image1 from '../assets/image_1.png';
 import Image2 from '../assets/image_2.png';
 import Image3 from '../assets/image_3.png';
 import { NavLink } from 'react-router-dom';
+import Login from '../components/Login';
 
 function homePage() {
 
@@ -39,10 +40,11 @@ function homePage() {
     `
 
     return (
-        <div style={{ overflowX: 'hidden' }}>
+        <div style={{ overflowX: 'hidden', maxWidth: '80rem' }}>
             <HomePageComponent>
-                <img src={NUSLogo} alt='' width={500} />
+                <img src={NUSLogo} alt='' width={300} />
                 <h1>NUS is a leading research university in Asia</h1>
+                <Login />
             </HomePageComponent>
             <NavigationImages>
                 <ImageButton>
