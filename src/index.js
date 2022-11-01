@@ -6,11 +6,13 @@ import AcademicsPage from './pages/academicsPage';
 import AdmissionPage from './pages/admissionPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import Navbar from './components/navbar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/academics" element={<AcademicsPage />} />
